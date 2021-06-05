@@ -1,0 +1,36 @@
+.jquery-accordion-menu,.jquery-accordion-menu * {
+        /*font-family: 'Open Sans',sans-serif;*/
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        outline: 0
+}
+
+.jquery-accordion-menu {
+        min-width: 260px;
+        float: left;
+        position: relative;
+        box-shadow: 0 20px 50px #333
+}
+.jquery-accordion-menu a {
+        width: 100%;
+        margin: 0;
+        padding: 14px 22px;
+        border-radius: 0;
+        font-size: 13px;
+        white-space: nowrap;
+        text-align: left;
+        box-shadow: none;
+        border-bottom: 1px solid #d9b300;
+        background-color: #ffd200;
+        overflow: hidden;
+        -o-transition: color .2s linear,background .2s linear;
+        -moz-transition: color .2s linear,background .2s linear;
+        -webkit-transition: color .2s linear,background .2s linear;
+        transition: color .2s linear,background .2s linear
+}
+.jquery-accordion-menu a:hover {
+        box-shadow: none;
+        background-color: #d9b300;
+        border-color: #d9b300;
+}
