@@ -69,10 +69,22 @@ footer a:hover {
     height: 4px;
     background: #ffd200;
 }
-.swiper-wrapper img{
+.swiper-wrapper img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
+}
+.carousel-caption {
+    right: 0;
+    left: 0;
+    background-color: #00000040;
+}
+.carousel-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.carousel-title:hover {
+    color: #e7e7e7;
 }
 header {
     margin-bottom: 2rem;
