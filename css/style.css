@@ -1,19 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/background_2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
-/*.content {*/
-/*    background-image: url("../img/background.jpg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    -webkit-background-size: cover;*/
-/*    -moz-background-size:  cover;*/
-/*    -o-background-size: cover;*/
-/*    background-size: cover;*/
-/*}*/
-/*.content .main {*/
-/*    background-color: #fff;*/
-/*    padding-bottom: 1rem;*/
-/*}*/
+a {
+    color: rgb(102, 109, 117);
+}
+a:hover {
+    color: #FF666D75;
+}
+.content .main {
+    background-color: #fff;
+    padding: 1rem;
+}
 .mobile-header a img {
     padding: .5rem 0;
 }
@@ -542,4 +542,65 @@ nav a {
     .h1 {
         font-size: 30px;
     }
+}
+
+.btn-primary {
+    color: #333;
+    background-color: #ffd200 !important
+}
+
+.btn-primary:hover {
+    color: #333;
+    background-color: #f3d659
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+
+.btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #ceab00
+}
+
+.btn-primary.dropdown-toggle {
+    background-color: #ceab00 !important
+}
+
+.btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus {
+    background-color: #f3d659 !important
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: #ceab00 !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+
+.btn-primary:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+
+.primary-ic {
+    color: #ffd200 !important
+}
+
+.primary-ic:hover, .primary-ic:focus {
+    color: #f3d659
+}
+
+a.btn:not([href]):not([tabindex]), a.btn:not([href]):not([tabindex]):focus, a.btn:not([href]):not([tabindex]):hover {
+    color: #333
+}
+
+table.table a.btn.btn-primary {
+    color: #333
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #333
+}
+.request {
+    float: right;
+    z-index: 100;
 }
