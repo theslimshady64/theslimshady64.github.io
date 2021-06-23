@@ -1,6 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/*.content {*/
+/*    background-image: url("../img/background.jpg");*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size:  cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+/*}*/
+/*.content .main {*/
+/*    background-color: #fff;*/
+/*    padding-bottom: 1rem;*/
+/*}*/
 .mobile-header a img {
     padding: .5rem 0;
 }
@@ -24,13 +37,24 @@ body {
 footer {
     color: #fff;
     background: #26272b;
-    margin-top: 2rem;
     padding: 1.5rem 0;
 }
 footer .footer-links {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
+}
+footer .footer-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-links ul li a,
+footer .mobile-footer-links ul li a {
+    font-size: 16px;
+    color: #fff;
+}
+footer .footer-links ul li a:hover {
+    color: #d9b300;
 }
 footer .copyright {
     color: #737373;
@@ -47,9 +71,6 @@ footer ul {
 }
 footer a {
     color: #737373;
-}
-footer a:hover {
-    color: #d9b300;
 }
 .page-title {
     font-size: 3rem;
@@ -88,18 +109,21 @@ footer a:hover {
 }
 .widget-weather {
     width: 100%;
-    height: 45px;
+    height: 50px;
     object-fit: cover;
     object-position: top;
 }
 .widget-rates {
     width: 100%;
-    height: 82px;
+    height: 50px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 header {
     margin-bottom: 2rem;
+}
+.header .logo {
+    width: 170px;
 }
 nav ul {
     list-style: none;
@@ -108,13 +132,13 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
     color: #222;
 }
 .topmenu {
     display: flex;
     justify-content: space-between;
+    background-color: #ffd200;
 }
 .topmenu > li {
     display: inline-block;
@@ -125,6 +149,7 @@ nav a {
     padding: 10px 0;
     line-height: 1;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .topmenu li:hover a:before {
     transform: translate(-50%, 0);
@@ -135,7 +160,7 @@ nav a {
     z-index: 4;
     left: 50%;
     top: 100%;
-    width: 150px;
+    min-width: 200px;
     padding: 15px 0 15px;
     background: white;
     box-sizing: border-box;
@@ -145,13 +170,20 @@ nav a {
     transform: translate(-50%, 20px);
     transition: .3s;
 }
+.topmenu > li > a {
+    padding: .5rem 1rem;
+}
+.topmenu a:hover {
+    background-color: #d9b300;
+    color: inherit;
+}
 .topmenu > li:hover .submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
 .submenu a {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 1px;
     padding: 5px 10px;
     transition: .3s linear;
@@ -159,9 +191,6 @@ nav a {
 .submenu a:hover {
     background: #e8e8e8;
     color: #222;
-}
-a:not([href]):not([tabindex]):hover {
-    color: #d9b300;
 }
 .carousel {
     margin: 2rem 0;
@@ -471,8 +500,6 @@ a:not([href]):not([tabindex]):hover {
 .header .contacts {
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
-    border: 1px solid #dee2e6;
     padding: 1rem 3rem;
 }
 .md-form {
