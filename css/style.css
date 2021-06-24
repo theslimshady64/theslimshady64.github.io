@@ -37,21 +37,23 @@ a:hover {
 footer {
     color: #fff;
     background: #26272b;
-    padding: 1.5rem 0;
+    padding: 1rem 0 .5rem;
 }
 footer .footer-links {
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
 }
 footer .footer-links ul {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 }
 footer .footer-links ul li a,
 footer .mobile-footer-links ul li a {
     font-size: 16px;
     color: #fff;
+    padding-left: 2rem;
 }
 footer .footer-links ul li a:hover {
     color: #d9b300;
@@ -62,6 +64,7 @@ footer .copyright {
 footer hr {
     border-top-color: #bbb;
     opacity: 0.5;
+    margin: .5rem 0;
 }
 footer ul {
     font-size: 12px;
@@ -113,6 +116,9 @@ footer a {
     object-fit: cover;
     object-position: top;
 }
+.btn-group .btn {
+    width: 40px;
+}
 .widget-rates {
     width: 100%;
     height: 50px;
@@ -123,7 +129,7 @@ header {
     margin-bottom: 2rem;
 }
 .header .logo {
-    width: 170px;
+    width: 150px;
 }
 .header .main {
     background-color: rgba(255, 255, 255, 0.6);
@@ -505,7 +511,6 @@ nav a {
 .header .contacts {
     font-size: 14px;
     font-weight: 600;
-    padding: 1rem 3rem;
 }
 .md-form {
     margin: 0;
