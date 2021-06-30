@@ -1,0 +1,75 @@
+body {
+    background-color: gainsboro;
+}
+a {
+    color: #333;
+}
+.header .inside,
+.content .inside {
+    padding: 1rem;
+    background-color: #fff;
+}
+.header .logo {
+    width: 150px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd200;
+}
+nav .link {
+    position: relative;
+}
+nav .link a:hover {
+    color: #333;
+}
+nav .link > a {
+    position: relative;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+nav .link > a:hover {
+    background-color: #d9b300;
+    cursor: pointer;
+}
+nav .link:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+nav .submenu {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 100%;
+    min-width: 250px;
+    padding: 1rem 0;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .5s;
+}
+nav .submenu a {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: .5s linear;
+}
+nav .submenu a:hover {
+    background-color: #ffd200;
+}
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+footer {
+    background-color: #26272b;
+}
+footer .inside {
+    padding: 1rem 0;
+}
