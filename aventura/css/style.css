@@ -23,13 +23,15 @@ header {
 }
 .title h1 {
     font-size: 36px;
+    text-transform: uppercase;
 }
 .main {
     height: 280px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main a {
     font-family: 'Manrope', sans-serif;
@@ -59,5 +61,11 @@ footer a:hover {
 }
 .phone {
     float: right;
-    padding: 19px 28px;
+    padding: 15px 28px;
+    font-size: 22px;
+}
+.delimiter {
+    width: 1px;
+    height: 60%;
+    background-color: #fff;
 }
